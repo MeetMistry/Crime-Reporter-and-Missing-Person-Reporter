@@ -1,0 +1,82 @@
+package com.example.facedetect;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
+import android.app.Activity;
+import android.content.pm.PackageManager;
+import android.nfc.Tag;
+import android.os.Bundle;
+import android.Manifest;
+import android.content.Context;
+import android.util.Log;
+import android.view.SurfaceView;
+import android.view.WindowManager;
+import android.widget.TextView;
+
+import org.opencv.android.BaseLoaderCallback;
+import org.opencv.android.CameraBridgeViewBase;
+import org.opencv.android.LoaderCallbackInterface;
+import org.opencv.android.OpenCVLoader;
+import org.opencv.core.Mat;
+import org.opencv.core.MatOfRect;
+import org.opencv.objdetect.CascadeClassifier;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+
+public class MainActivity extends AppCompatActivity implements CameraBridgeViewBase.CvCameraViewListener2, Runnable {
+
+    private static final String TAG = "OCVSampleFaceDetect";
+    private CameraBridgeViewBase cameraBridgeViewBase;
+
+    private BaseLoaderCallback baseLoaderCallback = new BaseLoaderCallback(this) {
+
+        @Override
+        public void onManagerConnected(int status) {
+            if(status == LoaderCallbackInterface.SUCCESS){
+                Log.i(TAG,"OpenCV Loaded successfully");
+                cameraBridgeViewBase.enableView();
+            }else {
+                super.onManagerConnected(status);
+            }
+        }
+    };
+
+    private volatile boolean running = false;
+    private volatile int qtdFaces;
+    private volatile Mat matTmpProcessingFace;
+
+    private CascadeClassifier cascadeClassifier;
+    private File mCascadeFile;
+    private TextView infoFaces;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        setContentView(R.layout.activity_main);
+        infoFaces = findViewById(R.id.tv);
+        cameraBridgeViewBase = findViewById(R.id.main_surface);
+        loadHaarCascadeFile();
+        checkPermissions();
+    }
+
+    private void checkPermissions(){
+        if(isPermissionGranted()){
+            loadCameraBridge();
+        }else {
+            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.CAMERA},
+                    1);
+        }
+    }
+
+    private boolean isPermissionGranted(){
+        return ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+                == PackageManager.PERMISSION_GRANTED;
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permission
