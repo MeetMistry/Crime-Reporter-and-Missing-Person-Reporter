@@ -18,16 +18,16 @@
         app:civ_border_color="#FF000000"/>
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/loginEmailTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email:"
+        android:text="Email / Username :"
         android:textSize="22sp"
         android:layout_marginTop="210dp"
         android:layout_marginLeft="46dp"/>
 
     <EditText
-        android:id="@+id/emailEditText"
+        android:id="@+id/loginEmailEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -36,7 +36,7 @@
         android:inputType="textEmailAddress" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/loginPasswordTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Password:"
@@ -45,7 +45,7 @@
         android:layout_marginLeft="46dp"/>
 
     <EditText
-        android:id="@+id/passwordEditText"
+        android:id="@+id/loginPasswordEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
@@ -54,7 +54,7 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -70,5 +70,14 @@
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_centerHorizontal="true"/>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
 
 </RelativeLayout>

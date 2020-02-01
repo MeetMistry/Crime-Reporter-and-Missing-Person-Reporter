@@ -12,28 +12,28 @@
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_avd_hide_password.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\drawable-v21\\avd_hide_password.xml"
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_btn_checkable.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color\\abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_avd_hide_password.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\drawable-v21\\avd_hide_password.xml"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_radio.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_activity_chooser_view.xml"
-    },
-    {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_voice_search_api_material.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -112,12 +112,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_light.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_light.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -128,12 +128,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\drawable\\notification_bg_low.xml"
-    },
-    {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\drawable\\notification_bg_low.xml"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navigation_empty_icon.xml.flat",
@@ -156,12 +156,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_dark.xml.flat",
@@ -176,12 +176,12 @@
         "source": "D:\\CrimeReporter\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_stroke_color_selector.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\color\\mtrl_btn_stroke_color_selector.xml"
-    },
-    {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_stroke_color_selector.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\color\\mtrl_btn_stroke_color_selector.xml"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_layout.xml.flat",
@@ -216,24 +216,24 @@
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
-    },
-    {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action_tombstone.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_seek_thumb.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -264,12 +264,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\layout\\notification_template_custom_big.xml"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_edit_text_material.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -288,16 +288,16 @@
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_legacy_text_color_selector.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\layout-v16_notification_template_custom_big.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\layout-v16\\notification_template_custom_big.xml"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_legacy_text_color_selector.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_fast_out_linear_in.xml.flat",
@@ -332,12 +332,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "D:\\CrimeReporter\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_dialog_material_background.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-v21\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\CrimeReporter\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -356,12 +356,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\anim\\abc_slide_out_top.xml"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -376,20 +376,20 @@
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "D:\\CrimeReporter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\CrimeReporter\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -472,24 +472,24 @@
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\animator\\design_fab_show_motion_spec.xml"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_header_item_layout.xml.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_popup_menu_header_item_layout.xml"
-    },
-    {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_header_item_layout.xml.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_clear_material.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
-    },
-    {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_text_cursor_material.xml.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -572,12 +572,12 @@
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
         "source": "D:\\CrimeReporter\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -1814,6 +1814,10 @@
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_report.xml.flat",
+        "source": "D:\\CrimeReporter\\app\\src\\main\\res\\layout\\activity_report.xml"
     },
     {
         "merged": "D:\\CrimeReporter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
