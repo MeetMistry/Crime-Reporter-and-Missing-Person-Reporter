@@ -2,44 +2,37 @@ package com.example.crimereporter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.RadioButton;
-import android.widget.Spinner;
 import android.widget.Toast;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.HashMap;
 
-public class SignupActivity extends AppCompatActivity{
+public class SignupActivity extends AppCompatActivity {
 
-    EditText editTextname, editTextusername, editTextaddress, editTextmobile, editTextemail, editTextpassword, editTexttype;
+    EditText editTextname, editTextaddress, editTextmobile, editTextemail, editTextpassword, editTexttype;
     Button register,loginpage;
+    String Name_Holder, Address_Holder, MobileHolder, EmailHolder, PasswordHolder, typeHolder;
+    String finalResult;
+    String HttpURL = "https://crimereporterandmmissingpersonreporter.000webhostapp.com/register.php";
+    Boolean CheckEditText;
+    ProgressDialog progressDialog;
+    HashMap<String, String> hashMap = new HashMap<>();
+    HttpParse  httpParse = new HttpParse();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        //if the user is already logged in we will directly start the profile activity
-        if (SharedPrefManager.getInstance(this).isLoggedIn()) {
-            finish();
-            startActivity(new Intent(this, ReportActivity.class));
-            return;
-        }
-
         editTextname = (EditText)findViewById(R.id.nameEditText);
-        editTextusername = (EditText)findViewById(R.id.usernameEditText);
         editTextaddress = (EditText)findViewById(R.id.addressEditText);
         editTextmobile = (EditText)findViewById(R.id.mobileEditText);
         editTextemail = (EditText)findViewById(R.id.emailEditText);
@@ -48,161 +41,93 @@ public class SignupActivity extends AppCompatActivity{
         register = (Button)findViewById(R.id.registerButton);
         loginpage = (Button)findViewById(R.id.loginPageButton);
 
-        register.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //if user pressed on button register
-                //here we will register the user to server
-                registerUser();
-            }
-        });
-
         loginpage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //if user pressed on login
-                //we will open the login screen
-                finish();
-                startActivity(new Intent(SignupActivity.this, MainActivity.class));
+                Intent intent = new Intent(SignupActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                CheckEditTextIsEmptyOrNot();
+
+                if(CheckEditText){
+                    UserRegistrationFunction(Name_Holder, Address_Holder, MobileHolder, EmailHolder, PasswordHolder, typeHolder);
+                } else {
+                    Toast.makeText(SignupActivity.this, "Please Fill all the fields", Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
 
-    private void registerUser() {
-        final String name = editTextname.getText().toString().trim();
-        final String username = editTextusername.getText().toString().trim();
-        final String address = editTextaddress.getText().toString().trim();
-        final String email = editTextemail.getText().toString().trim();
-        final String password = editTextpassword.getText().toString().trim();
-        final String mobile = editTextmobile.getText().toString().trim();
-        final String type = editTexttype.getText().toString().trim();
+    public void CheckEditTextIsEmptyOrNot(){
 
-        //first we will do the validations
+        Name_Holder = editTextname.getText().toString();
+        Address_Holder = editTextaddress.getText().toString();
+        MobileHolder = editTextmobile.getText().toString();
+        EmailHolder = editTextemail.getText().toString();
+        PasswordHolder = editTextpassword.getText().toString();
+        typeHolder = editTexttype.getText().toString();
 
-        if (TextUtils.isEmpty(name)) {
-            editTextname.setError("Please enter name");
-            editTextname.requestFocus();
-            return;
+        if(TextUtils.isEmpty(Name_Holder) || TextUtils.isEmpty(Address_Holder) ||
+                TextUtils.isEmpty(MobileHolder) || TextUtils.isEmpty(EmailHolder) ||
+                TextUtils.isEmpty(PasswordHolder) || TextUtils.isEmpty(typeHolder)){
+
+            CheckEditText = false;
+        } else {
+
+            CheckEditText = true;
         }
+    }
 
-        if (TextUtils.isEmpty(username)) {
-            editTextusername.setError("Please enter username");
-            editTextusername.requestFocus();
-            return;
-        }
+    public void UserRegistrationFunction(final String Name, final String Address, final String Mobile
+    , final String Email, final String Password, final String type){
 
-        if (TextUtils.isEmpty(address)) {
-            editTextaddress.setError("Please enter address");
-            editTextaddress.requestFocus();
-            return;
-        }
-
-        if (TextUtils.isEmpty(email)) {
-            editTextemail.setError("Please enter your email");
-            editTextemail.requestFocus();
-            return;
-        }
-
-        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            editTextemail.setError("Enter a valid email");
-            editTextemail.requestFocus();
-            return;
-        }
-
-        if (TextUtils.isEmpty(password)) {
-            editTextpassword.setError("Enter a password");
-            editTextpassword.requestFocus();
-            return;
-        }
-
-        if (TextUtils.isEmpty(mobile)) {
-            editTextpassword.setError("Enter a Mobile no.");
-            editTextpassword.requestFocus();
-            return;
-        }
-
-        if (TextUtils.isEmpty(type)) {
-            editTexttype.setError("Enter a type");
-            editTexttype.requestFocus();
-            return;
-        }
-
-        //if it passes all the validations
-
-        class RegisterUser extends AsyncTask<Void, Void, String> {
-
-            private ProgressBar progressBar;
+        class UserRegistrationFunctionClass extends AsyncTask<String, Void, String>{
 
             @Override
-            protected String doInBackground(Void... voids) {
-                //creating request handler object
-                RequestHandler requestHandler = new RequestHandler();
-
-                //creating request parameters
-                HashMap<String, String> params = new HashMap<>();
-                params.put("name", name);
-                params.put("username", username);
-                params.put("address", address);
-                params.put("email", email);
-                params.put("password", password);
-                params.put("mobile", mobile);
-                params.put("type", type);
-
-                //returing the response
-                return requestHandler.sendPostRequest(URLs.URL_REGISTER, params);
-            }
-
-            @Override
-            protected void onPreExecute() {
+            protected void onPreExecute(){
                 super.onPreExecute();
-                //displaying the progress bar while user registers on the server
-                progressBar = (ProgressBar) findViewById(R.id.progressBar);
-                progressBar.setVisibility(View.VISIBLE);
+                progressDialog = progressDialog.show(SignupActivity.this, "Loading Data", null, true, true);
             }
 
             @Override
-            protected void onPostExecute(String s) {
-                super.onPostExecute(s);
-                //hiding the progressbar after completion
-                progressBar.setVisibility(View.GONE);
+            protected void onPostExecute(String httpResponseMsg){
+                super.onPostExecute(httpResponseMsg);
+                progressDialog.dismiss();
+                Toast.makeText(SignupActivity.this, httpResponseMsg.toString(), Toast.LENGTH_LONG).show();
+            }
 
-                try {
-                    //converting response to json object
-                    JSONObject obj = new JSONObject(s);
+            @Override
+            protected String doInBackground(String... params) {
 
-                    //if no error in response
-                    if (!obj.getBoolean("error")) {
-                        Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
+                hashMap.put("Name", params[0]);
+                hashMap.put("Address", params[1]);
+                hashMap.put("Mobile", params[2]);
+                hashMap.put("Email", params[3]);
+                hashMap.put("Password", params[4]);
+                hashMap.put("Type", params[5]);
 
-                        //getting the user from the response
-                        JSONObject userJson = obj.getJSONObject("user");
+//                Log.i("Name",params[0]);
+//                Log.i("Address", params[1]);
+//                Log.i("Mobile", params[2]);
+//                Log.i("Email", params[3]);
+//                Log.i("Password", params[4]);
+//                Log.i("Type", params[5]);
+                //Toast.makeText(SignupActivity.this,"DATA", Toast.LENGTH_LONG).show();
 
-                        //creating a new user object
-                        User user = new User(
-                                userJson.getString("name"),
-                                userJson.getString("username"),
-                                userJson.getString("address"),
-                                userJson.getString("email"),
-                                userJson.getInt("mobile"),
-                                userJson.getString("type")
-                        );
-
-                        //storing the user in shared preferences
-                        SharedPrefManager.getInstance(getApplicationContext()).userLogin(user);
-
-                        //starting the profile activity
-                        finish();
-                    } else {
-                        Toast.makeText(getApplicationContext(), "Some error occurred", Toast.LENGTH_SHORT).show();
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+                finalResult = httpParse.postRequest(hashMap, HttpURL);
+                Log.i("Check", "Uploading");
+                //Toast.makeText(getApplicationContext(),"Upload", Toast.LENGTH_LONG).show();
+                return finalResult;
             }
         }
 
-        //executing the async task
-        RegisterUser ru = new RegisterUser();
-        ru.execute();
+        UserRegistrationFunctionClass userRegistrationFunctionClass = new UserRegistrationFunctionClass();
+        userRegistrationFunctionClass.execute(Name, Address, Mobile, Email, Password, type);
     }
 }

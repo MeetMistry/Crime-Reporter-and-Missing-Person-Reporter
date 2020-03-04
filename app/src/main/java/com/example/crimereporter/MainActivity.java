@@ -2,148 +2,135 @@ package com.example.crimereporter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView signupTextView;
-    private EditText editTextemail, editTextpassword;
+    private EditText editTextEmail, editTextPassword;
     private Button loginButton;
-
+    String finalResult;
+    String PasswordHolder, EmailHolder;
+    String HttpURL = "https://crimereporterandmmissingpersonreporter.000webhostapp.com/login.php";
+    Boolean CheckEditText;
+    ProgressDialog progressDialog;
+    HashMap<String, String> hashMap = new HashMap<>();
+    HttpParse httpParse = new HttpParse();
+    public static final String Email = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editTextemail = (EditText)findViewById(R.id.loginEmailEditText);
-        editTextpassword = (EditText)findViewById(R.id.loginPasswordEditText);
+        editTextEmail = (EditText) findViewById(R.id.loginEmailEditText);
+        editTextPassword = (EditText)findViewById(R.id.loginPasswordEditText);
         loginButton = (Button)findViewById(R.id.loginButton);
         signupTextView = (TextView)findViewById(R.id.newAccountTextView);
+
+        /*int SDK_INT = android.os.Build.VERSION.SDK_INT;
+        if (SDK_INT > 8)
+        {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+                    .permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+            //your codes here
+            finalResult = httpParse.postRequest(hashMap, "https://crimereporterandmmissingpersonreporter.000webhostapp.com/test.php");
+            Log.e("Message",finalResult);
+            Toast.makeText(getApplicationContext(),finalResult.toString()+"Hello", Toast.LENGTH_LONG).show();
+        }*/
 
         signupTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SignupActivity.class);
+                Intent intent =new Intent(getApplicationContext(), SignupActivity.class);
                 startActivity(intent);
+
             }
         });
 
-        //if user presses on login
-        //calling the method login
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                userLogin();
+                CheckEditTextIsEmptyOrNot();
+
+                if(CheckEditText){
+                    UserLoginFunction(EmailHolder, PasswordHolder);
+                }else {
+                    Toast.makeText(MainActivity.this, "Please Fill all the Fields",
+                            Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
 
-    private void userLogin() {
-        //first getting the values
-        final String email = editTextemail.getText().toString();
-        final String password = editTextpassword.getText().toString();
+    public void CheckEditTextIsEmptyOrNot(){
 
-        //validating inputs
-        if (TextUtils.isEmpty(email)) {
-            editTextemail.setError("Please enter your email");
-            editTextemail.requestFocus();
-            return;
+        EmailHolder = editTextEmail.getText().toString();
+        PasswordHolder = editTextPassword.getText().toString();
+
+        if(TextUtils.isEmpty(EmailHolder) || TextUtils.isEmpty(PasswordHolder)){
+            CheckEditText = false;
+        }else {
+            CheckEditText = true;
         }
+    }
 
-        if (TextUtils.isEmpty(password)) {
-            editTextpassword.setError("Please enter your password");
-            editTextpassword.requestFocus();
-            return;
-        }
+    public void UserLoginFunction(final String email, final String password){
 
-        //if everything is fine
-
-        class UserLogin extends AsyncTask<Void, Void, String> {
-
-            ProgressBar progressBar;
+        class UserLoginClass extends AsyncTask<String, Void, String>{
 
             @Override
-            protected void onPreExecute() {
+            protected void onPreExecute(){
                 super.onPreExecute();
-                progressBar = (ProgressBar) findViewById(R.id.progressBar);
-                progressBar.setVisibility(View.VISIBLE);
+                progressDialog = ProgressDialog.show(MainActivity.this, "Loading Data",
+                        null, true, true);
             }
 
             @Override
-            protected void onPostExecute(String s) {
-                super.onPostExecute(s);
-                progressBar.setVisibility(View.GONE);
+            protected void onPostExecute(String httpResponseMsg){
+                super.onPostExecute(httpResponseMsg);
+                progressDialog.dismiss();
 
-
-                try {
-                    //converting response to json object
-                    JSONObject obj = new JSONObject(s);
-
-                    //if no error in response
-                    if (!obj.getBoolean("error")) {
-                        Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
-
-                        //getting the user from the response
-                        JSONObject userJson = obj.getJSONObject("user");
-
-                        //creating a new user object
-                        User user = new User(
-                                userJson.getString("name"),
-                                userJson.getString("username"),
-                                userJson.getString("address"),
-                                userJson.getString("email"),
-                                userJson.getInt("mobile"),
-                                userJson.getString("type")
-                        );
-
-                        //storing the user in shared preferences
-                        SharedPrefManager.getInstance(getApplicationContext()).userLogin(user);
-
-                        //starting the profile activity
-                        finish();
-                        startActivity(new Intent(getApplicationContext(), ReportActivity.class));
-                    } else {
-                        Toast.makeText(getApplicationContext(), "Invalid username or password", Toast.LENGTH_SHORT).show();
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
+                if (httpResponseMsg.equalsIgnoreCase("Data Matched")){
+                    finish();
+                    Intent intent = new Intent(MainActivity.this, Report.class);
+                    intent.putExtra(Email, email);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(MainActivity.this,httpResponseMsg,Toast.LENGTH_LONG).show();
                 }
             }
 
             @Override
-            protected String doInBackground(Void... voids) {
-                //creating request handler object
-                RequestHandler requestHandler = new RequestHandler();
+            protected String doInBackground(String... params) {
 
-                //creating request parameters
-                HashMap<String, String> params = new HashMap<>();
-                params.put("email", email);
-                params.put("password", password);
-
-                //returing the response
-                return requestHandler.sendPostRequest(URLs.URL_LOGIN, params);
+                hashMap.put("email", params[0]);
+                hashMap.put("password", params[1]);
+                finalResult = httpParse.postRequest(hashMap, HttpURL);
+                return finalResult;
             }
         }
 
-        UserLogin ul = new UserLogin();
-        ul.execute();
+        UserLoginClass userLoginClass = new UserLoginClass();
+        userLoginClass.execute(email, password);
     }
-}
 
+
+
+
+
+}
