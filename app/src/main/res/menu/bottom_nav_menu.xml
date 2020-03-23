@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_report"
+        android:icon="@drawable/ic_report_black_24dp"
+        android:title="@string/title_report" />
+
+    <item
+        android:id="@+id/navigation_missingPerson"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/title_missingPerson" />
+
+    <item
+        android:id="@+id/navigation_view"
+        android:icon="@drawable/ic_pageview_black_24dp"
+        android:title="@string/title_view" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/account_circle_black_24dp"
+        android:title="@string/title_profile" />
+
+</menu>

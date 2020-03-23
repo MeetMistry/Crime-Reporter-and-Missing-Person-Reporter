@@ -107,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (httpResponseMsg.equalsIgnoreCase("Data Matched")){
                     finish();
+
                     Intent intent = new Intent(MainActivity.this, Report.class);
                     intent.putExtra(Email, email);
                     startActivity(intent);
