@@ -128,9 +128,4 @@ public class MainActivity extends AppCompatActivity {
         UserLoginClass userLoginClass = new UserLoginClass();
         userLoginClass.execute(email, password);
     }
-
-
-
-
-
 }

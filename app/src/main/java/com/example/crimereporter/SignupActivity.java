@@ -52,7 +52,7 @@ public class SignupActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+` `
                 CheckEditTextIsEmptyOrNot();
 
                 if(CheckEditText){
@@ -111,14 +111,6 @@ public class SignupActivity extends AppCompatActivity {
                 hashMap.put("Email", params[3]);
                 hashMap.put("Password", params[4]);
                 hashMap.put("Type", params[5]);
-
-//                Log.i("Name",params[0]);
-//                Log.i("Address", params[1]);
-//                Log.i("Mobile", params[2]);
-//                Log.i("Email", params[3]);
-//                Log.i("Password", params[4]);
-//                Log.i("Type", params[5]);
-                //Toast.makeText(SignupActivity.this,"DATA", Toast.LENGTH_LONG).show();
 
                 finalResult = httpParse.postRequest(hashMap, HttpURL);
                 Log.i("Check", "Uploading");
