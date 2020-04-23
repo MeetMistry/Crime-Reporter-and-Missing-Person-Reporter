@@ -10,11 +10,11 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/logoImage"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:src="@drawable/logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
         app:civ_border_color="#FF000000"/>
 
     <TextView

@@ -52,7 +52,6 @@ public class SignupActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-` `
                 CheckEditTextIsEmptyOrNot();
 
                 if(CheckEditText){

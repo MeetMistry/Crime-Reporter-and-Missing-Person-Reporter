@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,125 +7,125 @@
     tools:context=".ui.report.ReportFragment">
 
 
-    <ScrollView
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Report Crime"
+            android:textSize="35sp"
+            android:textStyle="bold"/>
 
-            <TextView
-                android:id="@+id/reportNameTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Name:"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"/>
+        <TextView
+            android:id="@+id/reportAddressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="20dp"
+            android:text="Address:"
+            android:textSize="20sp"/>
 
-            <EditText
-                android:id="@+id/reportNameEditText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="18"
-                android:inputType="textPersonName"
-                android:layout_marginLeft="20dp"/>
+        <EditText
+            android:id="@+id/reportAddressEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="18"
+            android:layout_marginTop="115dp"
+            android:layout_marginLeft="20dp"/>
 
-            <TextView
-                android:id="@+id/reportAddressTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Address:"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/cityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="20dp"
+            android:text="City:"
+            android:textSize="20sp"/>
 
-            <EditText
-                android:id="@+id/reportAddressEditText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="18"
-                android:inputType="textPostalAddress"
-                android:layout_marginLeft="20dp"/>
+        <EditText
+            android:id="@+id/cityEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="18"
+            android:layout_marginTop="205dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="textPostalAddress" />
 
-            <TextView
-                android:id="@+id/reportMobileTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mobile No.:"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/pincodeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="20dp"
+            android:text="Pincode:"
+            android:textSize="20sp"/>
 
-            <EditText
-                android:id="@+id/reportMobileEditText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="18"
-                android:inputType="phone"
-                android:layout_marginLeft="20dp"/>
+        <EditText
+            android:id="@+id/pincodeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="18"
+            android:layout_marginTop="295dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="textPostalAddress" />
 
-            <TextView
-                android:id="@+id/reportCrimeTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Crime:"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/subjectTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="360dp"
+            android:layout_marginLeft="20dp"
+            android:text="Subject:"
+            android:textSize="20sp"/>
 
-            <EditText
-                android:id="@+id/reportCrimeEditText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="18"
-                android:gravity="start|top"
-                android:inputType="textMultiLine"
-                android:layout_marginLeft="20dp"/>
+        <EditText
+            android:id="@+id/subjectEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="18"
+            android:layout_marginTop="385dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="textPostalAddress" />
 
-            <TextView
-                android:id="@+id/reportUploadTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Upload:"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/reportDetailsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="20dp"
+            android:text="Details:"
+            android:textSize="20sp"/>
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:src="@tools:sample/avatars"
-                android:layout_marginLeft="20dp" />
+        <EditText
+            android:id="@+id/reportDetailsEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="18"
+            android:layout_marginTop="475dp"
+            android:layout_marginLeft="20dp"/>
 
-            <TextView
-                android:id="@+id/reportStatusTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Status:"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/reportSubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="report"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="530dp"/>
 
-            <Button
-                android:id="@+id/reportSubmitButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Submit"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="150dp"/>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
 
-        </LinearLayout>
+    </RelativeLayout>
 
-    </ScrollView>
-
-</RelativeLayout>
+</ScrollView>
