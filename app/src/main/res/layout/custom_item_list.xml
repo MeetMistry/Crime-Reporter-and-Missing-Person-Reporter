@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/customborder">
+
+    <TextView
+        android:id="@+id/vaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address: "
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/vcity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City: "
+        android:textSize="20dp"
+        android:layout_marginTop="45dp"/>
+
+    <TextView
+        android:id="@+id/txt_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:textSize="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="45dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/vpincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pincode: "
+        android:textSize="20dp"
+        android:layout_marginTop="85dp"/>
+
+    <TextView
+        android:id="@+id/txt_pincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pincode"
+        android:textSize="20dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="85dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/vsubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject: "
+        android:textSize="20dp"
+        android:layout_marginTop="125dp"/>
+
+    <TextView
+        android:id="@+id/txt_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:textSize="20dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="80dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/vdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details: "
+        android:textSize="20dp"
+        android:layout_marginTop="165dp"/>
+
+    <TextView
+        android:id="@+id/txt_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:textSize="20dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="75dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/vstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: "
+        android:textSize="20dp"
+        android:layout_marginTop="205dp"/>
+
+    <TextView
+        android:id="@+id/txt_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="20dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginLeft="70dp"
+        android:textColor="#FF0000"/>
+</RelativeLayout>
